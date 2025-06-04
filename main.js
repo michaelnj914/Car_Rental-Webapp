@@ -106,6 +106,12 @@ ScrollReveal().reveal(".subscribe__content form", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+});
 // const tabs = document.querySelector(".deals__tabs");
 
 // tabs.addEventListener("click", (e) => {

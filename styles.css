@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: #8a79f0;
-  --primary-color-dark: #2e2a40;
+  --primary-color: #05dd58;
+  --primary-color-dark: #117e35;
   --text-dark: #221e36;
   --text-light: #767268;
   --extra-light: #f1f2ff;
@@ -468,7 +468,6 @@ nav {
   line-height: 1.5rem;
 }
 
-
 .subscribe__container {
   position: relative;
   isolation: isolate;
@@ -526,12 +525,91 @@ nav {
   border-bottom-left-radius: 0;
 }
 
+.client__container {
+  padding-bottom: 1rem;
+}
 
+.client__container .section__description {
+  max-width: 600px;
+  margin-inline: auto;
+}
 
+.swiper {
+  padding-block: 4rem;
+  width: 100%;
+}
 
+.swiper-slide {
+  min-width: 375px;
+}
 
+.client__card {
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
 
+.client__card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
 
+.client__details {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client__details img {
+  max-width: 50px;
+  border-radius: 100%;
+}
+
+.client__details h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.client__rating {
+  color: goldenrod;
+}
+
+.client__card p {
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+.footer {
+  background-color: var(--primary-color-dark);
+}
+
+.footer__container {
+  display: grid;
+  gap: 4rem;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__logo img {
+  max-width: 45px;
+}
+
+.footer__logo span {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.footer__col p {
+  margin-bottom: 2rem;
+  color: var(--extra-light);
+  line-height: 1.5rem;
+}
 
 @media (width > 540px) {
   .about__grid {
@@ -698,7 +776,6 @@ nav {
     text-align: left;
   }
 
-
   .subscribe__container {
     grid-template-columns:
       minmax(0, 1fr)
@@ -720,7 +797,7 @@ nav {
     left: 0;
     transform: translateY(-50%);
     width: unset;
-    height: 100%
+    height: 100%;
   }
 
   .subscribe__content {
